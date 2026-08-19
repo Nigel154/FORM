@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Form</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+        }
+        .login-box{
+            width: 450px;
+            margin: 50px auto;
+            padding: 70px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px;
+        }
+        h1{
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 60px;
+        }
+        label{
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 320px;
+            padding: 8px;
+            margin-bottom: 11px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .Forgot-pass{
+            text-align: right;
+            margin-top: 2px;
+            margin-bottom: 10px;
+        }
+        .Forgot-pass a,
+        .register a {
+            text-decoration: none;
+        }
+
+        .login-button {
+            width: 320px;
+            padding: 8px;
+            background-color: #170da0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #4547b6;
+        }
+        .register {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form action="">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email">
+                    
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password">
+
+            <div class="Forgot-pass">
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-button">
+                login
+            </button>
+        </form>
+
+        <div class="register">
+            Dont have an account?
+            <a href="#">Register</a>
+        </div>
+
+    </div>
+</body>
+</html>
